@@ -1,0 +1,1274 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Crawling Website TribunJateng &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '210411100177_Prio Budi Laksono_PPW_Crawling Data Web';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="210411100177%20Prio%20Budi%20Laksono%20Tugas%202%20PPW.html">Tugas 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="210411100177%20Prio%20Budi%20Laksono%20Tugas%204%20PPW.html">Tugas 4</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F210411100177_Prio Budi Laksono_PPW_Crawling Data Web.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/210411100177_Prio Budi Laksono_PPW_Crawling Data Web.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Crawling Website TribunJateng</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-crawling-data">Pengertian Crawling Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#melakukan-import-library-yang-dibutuhkan">1. Melakukan import library yang dibutuhkan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-halaman-website-dan-memeriksa-status-request">2. Mengambil Halaman Website dan Memeriksa status request</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menemukan-dan-mengekstrak-150-berita">3. Menemukan dan Mengekstrak 150 Berita</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-setiap-artikel-berita">4. Mengambil data dari setiap artikel berita</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-data-yang-di-crowling-ke-dalam-tabel">5. Menampilkan data yang di crowling ke dalam tabel</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="crawling-website-tribunjateng">
+<h1>Crawling Website TribunJateng<a class="headerlink" href="#crawling-website-tribunjateng" title="Link to this heading">#</a></h1>
+<p>Nama : Prio Budi Laksono</p>
+<p>NIM  : 210411100177</p>
+<section id="pengertian-crawling-data">
+<h2>Pengertian Crawling Data<a class="headerlink" href="#pengertian-crawling-data" title="Link to this heading">#</a></h2>
+<p>Crawling data adalah proses otomatisasi untuk mengumpulkan data dari situs web oleh mesin pencari. Saat mesin pencari mengunjungi sebuah situs, ia akan menjelajahi semua tautan yang ada pada halaman tersebut dan mengumpulkan informasi dari setiap halaman yang diakses. Proses ini menghasilkan indeks data yang sangat besar, yang kemudian dapat digunakan untuk menampilkan informasi yang relevan berdasarkan kebutuhan pencarian.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>requests<span class="w"> </span>beautifulsoup4<span class="w"> </span>pandas
+
+<span class="c1">#install library untuk mengambil konten di dalam website</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (2.32.3)
+Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.10/dist-packages (4.12.3)
+Requirement already satisfied: pandas in /usr/local/lib/python3.10/dist-packages (2.2.2)
+Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /usr/local/lib/python3.10/dist-packages (from requests) (3.4.0)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.10/dist-packages (from requests) (3.10)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests) (2.2.3)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests) (2024.8.30)
+Requirement already satisfied: soupsieve&gt;1.2 in /usr/local/lib/python3.10/dist-packages (from beautifulsoup4) (2.6)
+Requirement already satisfied: numpy&gt;=1.22.4 in /usr/local/lib/python3.10/dist-packages (from pandas) (1.26.4)
+Requirement already satisfied: python-dateutil&gt;=2.8.2 in /usr/local/lib/python3.10/dist-packages (from pandas) (2.8.2)
+Requirement already satisfied: pytz&gt;=2020.1 in /usr/local/lib/python3.10/dist-packages (from pandas) (2024.2)
+Requirement already satisfied: tzdata&gt;=2022.7 in /usr/local/lib/python3.10/dist-packages (from pandas) (2024.2)
+Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.10/dist-packages (from python-dateutil&gt;=2.8.2-&gt;pandas) (1.16.0)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="melakukan-import-library-yang-dibutuhkan">
+<h2>1. Melakukan import library yang dibutuhkan<a class="headerlink" href="#melakukan-import-library-yang-dibutuhkan" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>requests: Digunakan untuk melakukan HTTP request ke sebuah URL dan mendapatkan konten halaman web.</p>
+<p>BeautifulSoup: Digunakan untuk mem-parsing HTML dan mengekstrak data dari halaman web.</p>
+<p>pandas: Digunakan untuk mengolah data dan menyimpan hasil ekstraksi ke dalam bentuk DataFrame.</p>
+</section>
+<section id="mengambil-halaman-website-dan-memeriksa-status-request">
+<h2>2. Mengambil Halaman Website dan Memeriksa status request<a class="headerlink" href="#mengambil-halaman-website-dan-memeriksa-status-request" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://jateng.tribunnews.com/&#39;</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+<span class="c1"># Periksa apakah request berhasil</span>
+<span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Request berhasil!&quot;</span><span class="p">)</span>
+    <span class="n">page_content</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Gagal mengambil halaman, status code: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Parsing HTML</span>
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page_content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gagal mengambil halaman, status code: 403
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-3-08148a011078&gt;</span> in <span class="ni">&lt;cell line: 12&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> 
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="c1"># Parsing HTML</span>
+<span class="ne">---&gt; </span><span class="mi">12</span> <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page_content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;page_content&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="menemukan-dan-mengekstrak-150-berita">
+<h2>3. Menemukan dan Mengekstrak 150 Berita<a class="headerlink" href="#menemukan-dan-mengekstrak-150-berita" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Cari semua &lt;h3&gt; yang mengandung &lt;a&gt;</span>
+<span class="n">articles</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;h3&#39;</span><span class="p">)</span>
+
+<span class="c1"># Ekstrak URL dari &lt;a&gt; di dalam &lt;h3&gt; dan simpan dalam list</span>
+<span class="n">urls</span> <span class="o">=</span> <span class="p">[</span><span class="n">article</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="n">articles</span> <span class="k">if</span> <span class="n">article</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)][:</span><span class="mi">150</span><span class="p">]</span>
+
+<span class="c1"># Tampilkan 10 URL berita yang ditemukan</span>
+<span class="n">urls</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;https://jateng.tribunnews.com/2024/09/11/ivan-gunawan-kesal-bikin-kolam-renang-rp1-miliar-tapi-bocor&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/komplotan-maling-ini-selalu-incar-barang-kantor-dan-fasum-satu-pelaku-ditembak-polisi&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/lewat-gelaran-pon-xxi-bsi-komitmen-majukan-olahraga-aceh&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/bawaslu-kudus-ingatkan-asn-harus-netral-dalam-pilkada&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/nikmati-keindahan-alam-dan-petualangan-di-desa-wisata-pandansari-batang&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/chord-kunci-gitar-lama-lama-bernadya-punya-sibuk-lain-tak-harus-aku&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/sebanyak-3673-knalpot-brong-dimusnahkan-polres-kudus-jelang-pilkada-serentak&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/10/update-ranking-fifa-usai-hasil-imbang-timnas-indonesia-vs-australia-1-peringkat-di-atas-malaysia?utm_source=topstories&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/09/pelajar-smp-mabuk-leci-aniaya-siswa-sd-di-tembalang-semarang-korban-hingga-sujud-minta-ampun?utm_source=topstories&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/10/viral-haru-siswa-sekelas-iuran-belikan-sepeda-buat-romsi-biar-tak-lagi-jalan-kaki-ke-sekolah?utm_source=topstories&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/tabel-bri-non-kur-dan-kur-11-september-2024-brosur-cicilan-bunga-max-1-persenbulan&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/bak-kesetanan-paman-ini-brutal-hajar-keponakannya-yang-masih-berusia-10-tahun&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/gibran-sudah-bereaksi-soal-akun-fufufafa-yang-viral-menkominfo-sebut-sudah-menelusuri&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/kami-sangat-prihatin-respons-ikhwanudin-mantan-ketua-gp-ansor-jateng-soal-caretaker&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/bima-mujab-miliki-program-kabupaten-tegal-ikonik-bisa-maju-bahagia-dan-menyala-ini-maksudnya&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/berlaku-siang-ini-resmi-turun-harga-bbm-hari-ini-rabu-11-september-2024-cek-pertamax-hingga-solar&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/saaih-halilintar-angkat-bicara-dituding-tak-punya-npwp-setelah-tidak-lolos-administrasi-di-pon-2024&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/01/bocah-kelas-4-sd-jadi-korban-bully-dipaksa-teman-makan-roti-diisi-duri-pasti-sakit-banget?utm_source=topindex&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/cara-gampang-pasang-listrik-baru-dan-tambah-daya-listrik-pln-dengan-mobile-pln-secara-online&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/dua-produk-dapatkan-apresiasi-pj-wali-kota-salatiga-kuatkan-tekad-uksw-untuk-semakin-berdampak&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/jateng-mulai-raih-medali-emas-di-pon-aceh-sumut-nana-sudjana-dongkrak-semangat-dan-mental-atlet&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/wedangan-djembuk-solo-dikenai-pajak-rp-12-juta-per-bulan-apakah-sesuai-konsumen-buka-suara&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/sekjen-pbnu-gus-ipul-mundur-dari-wali-kota-pasuruan-setelah-dilantik-jadi-mensos&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/pj-wali-kota-salatiga-dukung-rangkaian-dies-natalis-ke-68-uksw-fun-run-hingga-wayang-kulit&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/jasa-antar-jemput-dan-titip-di-semarang-diminta-tengok-pacar-hingga-minta-tanda-tangan-dosen&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/curhatan-penuh-kekecewaan-penjual-nasi-3000-kotak-makanan-dibatalkan-h-1-acara-pon-2024&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/korsleting-listrik-brak-mebel-di-desa-sekuro-jepara-terbakar-kerugian-ratusan-juta&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/senior-dokter-aulia-dan-pihak-kampus-undip-belum-tersentuh-penyelidikan-polisi-sama-sekali&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/penyanyi-brisia-jodieungkap-alasan-terima-lamaran-kekasih-saat-manggung&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/bisnis-volkswagen-jerman-rontok-serikat-pekerja-menolak-rencana-penutupan-6-pabrik&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/akhir-kisah-kdrt-maut-di-karanganyar-suami-korban-ditetapkan-jadi-tersangka&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/september-ceria-nite-day-hotel-semarang-berikan-promo-menginap-hanya-340k-sampai-akhir-bulan&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/menolak-meminjamkan-priring-nyawa-pria-di-bekasi-melayang&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/faktor-cuaca-banyak-petani-di-blora-yang-beralih-dari-tanaman-padi-ke-jagung&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/workshop-penguatan-kapasitas-kelembagaan-koperasi-feb-unnes-untuk-pengelola-koperasi-nurul-barqi&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/beri-penguatan-dan-arahan-tugas-dirjen-ham-dorong-implementasi-p2ham-di-daerah&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/10/update-ranking-fifa-usai-hasil-imbang-timnas-indonesia-vs-australia-1-peringkat-di-atas-malaysia?utm_source=topstories&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/09/pelajar-smp-mabuk-leci-aniaya-siswa-sd-di-tembalang-semarang-korban-hingga-sujud-minta-ampun?utm_source=topstories&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/10/viral-haru-siswa-sekelas-iuran-belikan-sepeda-buat-romsi-biar-tak-lagi-jalan-kaki-ke-sekolah?utm_source=topstories&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/tengku-firmansyah-unggah-potret-dirinya-saat-shift-malam-di-kanada-dengan-suhu-13-derajat-celcius&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/harga-emas-antam-di-semarang-hari-ini-rabu-11-september-2024-naik-rp-12000-pergram&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/jadwal-film-bioskop-pati-hari-ini-rabu-11-september-2024-tayang-7-film-pilihan&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/vonis-hakim-malah-lebih-berat-hukuman-syl-ditambah-jadi-12-tahun-penjara&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/punya-foto-kejadian-ini-kesaksian-nazrudin-sebut-lihat-langsung-eky-dan-vina-cirebon-kecelakaan&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/pelatih-australia-sejak-awal-sudah-soroti-maarten-paes-ternyata-terbukti&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/honda-big-bos-sulawesi-journey-2-hadirkan-kegembiraan-berkendara-dan-penjelajahan-menantang&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/indosat-berdayakan-sektor-perbankan-dan-keuangan-indonesia-lewat-ai&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/dokter-kabur-tinggalkan-jasad-pasien-setelah-mengoperasi-sambil-nonton-video-youtube&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/cita-cita-kuliah-gadis-penjual-gorengan-di-padang-pariaman-terkubur-bersama-jasadnya&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/chord-iwan-fals-aku-milikmu-kunci-gitar-dari-c&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/kpk-sita-uang-tunai-dan-bukti-elektronik-saat-geledah-rumah-mendes-pdtt&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/kecelakaan-helikopter-saat-bawa-buron-kepala-polisi-el-savador-dan-8-orang-lainnya-tewas&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/kpk-ada-satu-bakal-calon-kepala-daerah-berstatus-tersangka&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/ruang-sekretariat-dprd-riau-digeledah-terkait-kasus-35836-tiket-pesawat-fiktif&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/breaking-news-kandang-ayam-di-hadipolo-kudus-terbakar&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/pengendara-motor-tewas-terseret-truk-setelah-disenggol-mobil&#39;,
+ &#39;https://jateng.tribunnews.com/2024/09/11/3-nyawa-melayang-dalam-kecelakaan-maut-mobilio-vs-truk-lpg-di-jalan-tol&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="mengambil-data-dari-setiap-artikel-berita">
+<h2>4. Mengambil data dari setiap artikel berita<a class="headerlink" href="#mengambil-data-dari-setiap-artikel-berita" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">url</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">urls</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+    
+    <span class="c1"># Mendapatkan judul</span>
+    <span class="n">judul</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+    <span class="c1"># Mendapatkan tanggal</span>
+    <span class="n">tanggal</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+    <span class="c1"># Mendapatkan isi artikel</span>
+    <span class="n">isi</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">))</span>
+    
+    <span class="c1"># Mencari breadcrumb</span>
+    <span class="n">breadcrumb</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">:</span> <span class="s1">&#39;breadcrumb&#39;</span><span class="p">})</span>
+
+    <span class="c1"># Mengambil kategori terakhir dari breadcrumb</span>
+    <span class="n">kategori</span> <span class="o">=</span> <span class="n">breadcrumb</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    
+    <span class="c1"># Simpan data ke dalam list</span>
+    <span class="n">data_list</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+        <span class="s1">&#39;No&#39;</span><span class="p">:</span> <span class="n">i</span><span class="p">,</span>
+        <span class="s1">&#39;Judul Berita&#39;</span><span class="p">:</span> <span class="n">judul</span><span class="p">,</span>
+        <span class="s1">&#39;Tanggal Berita&#39;</span><span class="p">:</span> <span class="n">tanggal</span><span class="p">,</span>
+        <span class="s1">&#39;Kategori Berita&#39;</span><span class="p">:</span> <span class="n">kategori</span><span class="p">,</span>
+        <span class="s1">&#39;Isi Berita&#39;</span><span class="p">:</span> <span class="n">isi</span><span class="p">,</span>
+        <span class="s1">&#39;URL&#39;</span><span class="p">:</span> <span class="n">url</span>
+    <span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>data_list: List untuk menyimpan data dari setiap artikel berita.</p>
+<p>for i, url in enumerate(urls, start=1): Looping untuk setiap URL yang ditemukan, di mana i adalah index mulai dari 1.</p>
+<p>requests.get(url): Mengambil konten halaman dari URL artikel.</p>
+<p>judul = soup.find(‘h1’).text.strip(): Menemukan judul berita di dalam elemen h1.</p>
+<p>tanggal = soup.find(‘time’).text.strip(): Menemukan tanggal berita di dalam elemen time.</p>
+<p>isi = ‘ ‘.join(p.text.strip() for p in soup.find_all(‘p’)): Menggabungkan semua paragraf <p> di dalam artikel untuk mendapatkan isi berita.</p>
+<p>breadcrumb = soup.find(‘ul’, {‘class’: ‘breadcrumb’}): Mencari elemen breadcrumb untuk menemukan kategori berita.</p>
+<p>kategori = breadcrumb.find_all(‘li’)[-1].find(‘span’).text.strip(): Mengambil kategori terakhir dalam breadcrumb.</p>
+<p>data_list.append({…}): Menyimpan data yang telah diekstrak ke dalam list data_list.</p>
+</section>
+<section id="menampilkan-data-yang-di-crowling-ke-dalam-tabel">
+<h2>5. Menampilkan data yang di crowling ke dalam tabel<a class="headerlink" href="#menampilkan-data-yang-di-crowling-ke-dalam-tabel" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Konversi ke DataFrame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_list</span><span class="p">)</span>
+
+<span class="c1"># Tampilkan tabel</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>No</th>
+      <th>Judul Berita</th>
+      <th>Tanggal Berita</th>
+      <th>Kategori Berita</th>
+      <th>Isi Berita</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Ivan Gunawan Kesal, Bikin Kolam Renang Rp1 Mil...</td>
+      <td>Tayang: Rabu, 11 September 2024 12:29 WIB</td>
+      <td>Gosipi</td>
+      <td>Ivan Gunawan Kesal, Bikin Kolam Renang Rp1 Mil...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/ivan-...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Komplotan Maling Ini Selalu Incar Barang Kanto...</td>
+      <td>Tayang: Rabu, 11 September 2024 12:06 WIB</td>
+      <td>Regional</td>
+      <td>TRIBUNJATENG.COM - Tim Pegasus Polres Jenepont...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/kompl...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Lewat Gelaran PON XXI, BSI Komitmen Majukan Ol...</td>
+      <td>Tayang: Rabu, 11 September 2024 12:05 WIB</td>
+      <td>advertorial</td>
+      <td>TRIBUNJATENG.COM - PT Bank Syariah Indonesia T...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/lewat...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Bawaslu Kudus Ingatkan ASN Harus Netral dalam ...</td>
+      <td>Tayang: Rabu, 11 September 2024 12:03 WIB</td>
+      <td>Pilkada</td>
+      <td>TRIBUNJATENG.COM, KUDUS – Seluruh Aparatur Sip...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/bawas...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Nikmati Keindahan Alam dan Petualangan di Desa...</td>
+      <td>Tayang: Rabu, 11 September 2024 12:01 WIB</td>
+      <td>Mbangun Batang</td>
+      <td>TRIBUNJATENG.COM, BATANG - Desa Wisata Pandans...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/nikma...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>6</td>
+      <td>Chord Kunci Gitar Lama-lama, Bernadya : Punya ...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:57 WIB</td>
+      <td>Musik</td>
+      <td>Chord Kunci Gitar Lama-lama, Bernadya : Punya ...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/chord...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>7</td>
+      <td>Sebanyak 3.673 Knalpot Brong Dimusnahkan Polre...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:56 WIB</td>
+      <td>Muria</td>
+      <td>TRIBUNJATENG.COM, KUDUS - Jelang pilkada seren...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/seban...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>8</td>
+      <td>UPDATE Ranking FIFA Usai Hasil Imbang Timnas I...</td>
+      <td>Tayang: Selasa, 10 September 2024 22:45 WIB</td>
+      <td>Super Ball</td>
+      <td>TRIBUNJATENG.COM, JAKARTA - Timnas Indonesia k...</td>
+      <td>https://jateng.tribunnews.com/2024/09/10/updat...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>9</td>
+      <td>Pelajar SMP Mabuk Leci Aniaya Siswa SD di Temb...</td>
+      <td>Tayang: Senin, 9 September 2024 15:41 WIB</td>
+      <td>Semarang</td>
+      <td>TRIBUNJATENG.COM, SEMARANG - Video seorang ana...</td>
+      <td>https://jateng.tribunnews.com/2024/09/09/pelaj...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10</td>
+      <td>VIRAL Haru Siswa Sekelas Iuran Belikan Sepeda ...</td>
+      <td>Tayang: Selasa, 10 September 2024 14:00 WIB</td>
+      <td>Jawa Tengah</td>
+      <td>TRIBUNJATENG.COM, KEBUMEN - Kisah siswa satu k...</td>
+      <td>https://jateng.tribunnews.com/2024/09/10/viral...</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>11</td>
+      <td>Tabel BRI NON KUR dan KUR 11 September 2024, B...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:54 WIB</td>
+      <td>Finansial</td>
+      <td>Tabel Pinjaman BRI NON KUR dan KUR, Brosur Cic...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/tabel...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>12</td>
+      <td>Bak Kesetanan, Paman Ini Brutal Hajar Keponaka...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:50 WIB</td>
+      <td>Regional</td>
+      <td>TRIBUNJATENG.COM - Sebuah video yang memperlih...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/bak-k...</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>13</td>
+      <td>Gibran Sudah Bereaksi Soal Akun Fufufafa yang ...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:45 WIB</td>
+      <td>News</td>
+      <td>TRIBUNJATENG.COM - Keberadaan akun Fufufafa ma...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/gibra...</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>14</td>
+      <td>"Kami Sangat Prihatin" Respons Ikhwanudin Mant...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:39 WIB</td>
+      <td>Jawa Tengah</td>
+      <td>TRIBUNJATENG.COM, SEMARANG - Keputusan Caretak...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/kami-...</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>15</td>
+      <td>Bima-Mujab Miliki Program Kabupaten Tegal Ikon...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:38 WIB</td>
+      <td>Pilkada</td>
+      <td>TRIBUNJATENG.COM, SLAWI - Bakal Pasangan Calon...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/bima-...</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>16</td>
+      <td>Berlaku Siang Ini, Resmi Turun Harga BBM Hari ...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:38 WIB</td>
+      <td>Regional</td>
+      <td>Berlaku Siang Ini, Resmi Turun Harga BBM Hari ...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/berla...</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>17</td>
+      <td>Saaih Halilintar Angkat Bicara Dituding Tak Pu...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:37 WIB</td>
+      <td>Gosipi</td>
+      <td>Saaih Halilintar Angkat Bicara Dituding Tak Pu...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/saaih...</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>18</td>
+      <td>Bocah Kelas 4 SD Jadi Korban Bully, Dipaksa Te...</td>
+      <td>Tayang: Minggu, 1 September 2024 18:27 WIB</td>
+      <td>Nasional</td>
+      <td>TRIBUNJATENG.COM- Seorang siswi kelas 4 SD dip...</td>
+      <td>https://jateng.tribunnews.com/2024/09/01/bocah...</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>19</td>
+      <td>Cara Gampang Pasang Listrik Baru dan Tambah Da...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:33 WIB</td>
+      <td>Regional</td>
+      <td>Cara Gampang Pasang Listrik Baru dan Tambah Da...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/cara-...</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>20</td>
+      <td>Dua Produk Dapatkan Apresiasi Pj. Wali Kota Sa...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:30 WIB</td>
+      <td>UKSW Salatiga</td>
+      <td>TRIBUNJATENG.COM - Roti sourdough produk dari ...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/dua-p...</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>21</td>
+      <td>Jateng Mulai Raih Medali Emas di PON Aceh-Sumu...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:24 WIB</td>
+      <td>Jawa Tengah</td>
+      <td>TRIBUNJATENG.COM, SEMARANG - Kontingan Jateng ...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/jaten...</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>22</td>
+      <td>Wedangan D’Jembuk Solo Dikenai Pajak Rp 12 Jut...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:23 WIB</td>
+      <td>Solo</td>
+      <td>TRIBUNJATENG.COM, SOLO - Yang tengah hangat di...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/wedan...</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>23</td>
+      <td>Sekjen PBNU Gus Ipul Mundur dari Wali Kota Pas...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:15 WIB</td>
+      <td>Nasional</td>
+      <td>TRIBUNJATENG.COM, JAKARTA - Sekretaris Jendera...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/sekje...</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>24</td>
+      <td>Pj Wali Kota Salatiga Dukung Rangkaian Dies Na...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:13 WIB</td>
+      <td>UKSW Salatiga</td>
+      <td>TRIBUNJATENG.COM, SALATIGA - Berbagai kegiatan...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/pj-wa...</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>25</td>
+      <td>Jasa Antar Jemput dan Titip di Semarang, Dimin...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:09 WIB</td>
+      <td>Semarang</td>
+      <td>TRIBUNJATENG.COM - Jasa antar jemput (anjem) d...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/jasa-...</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>26</td>
+      <td>Curhatan Penuh Kekecewaan Penjual Nasi, 3000 K...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:08 WIB</td>
+      <td>Nasional</td>
+      <td>Curhatan Penuh Kekecewaan Penjual Nasi, 3000 K...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/curha...</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>27</td>
+      <td>Korsleting Listrik, Brak Mebel di Desa Sekuro ...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:08 WIB</td>
+      <td>Jawa Tengah</td>
+      <td>TRIBUNJATENG.COM, JEPARA - Telah terjadi kebak...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/korsl...</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>28</td>
+      <td>Senior Dokter Aulia dan Pihak Kampus Undip Bel...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:06 WIB</td>
+      <td>Semarang</td>
+      <td>TRIBUNJATENG.COM, SEMARANG - Penyidik Direktor...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/senio...</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>29</td>
+      <td>Penyanyi Brisia Jodie Ungkap Alasan Terima Lam...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:03 WIB</td>
+      <td>Seleb</td>
+      <td>TRIBUNJATENG.COM - PENYANYI Brisia Jodie dilam...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/penya...</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>30</td>
+      <td>Bisnis Volkswagen Jerman Rontok, Serikat Peker...</td>
+      <td>Tayang: Rabu, 11 September 2024 11:00 WIB</td>
+      <td>News</td>
+      <td>TRIBUNJATENG.COM, JERMAN - Manajemen Volkswage...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/bisni...</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>31</td>
+      <td>Akhir Kisah KDRT Maut di Karanganyar, Suami Ko...</td>
+      <td>Tayang: Rabu, 11 September 2024 10:57 WIB</td>
+      <td>Jawa Tengah</td>
+      <td>TRIBUNJATENG.COM, KARANGANYAR - Polres Karanga...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/akhir...</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>32</td>
+      <td>September Ceria! Nite &amp; Day Hotel Semarang Ber...</td>
+      <td>Tayang: Rabu, 11 September 2024 10:53 WIB</td>
+      <td>Semarang</td>
+      <td>TRIBUNJATENG.COM, SEMARANG - Nite&amp;Day Hotel Se...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/septe...</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>33</td>
+      <td>Menolak Meminjamkan Priring, Nyawa Pria di Bek...</td>
+      <td>Tayang: Rabu, 11 September 2024 10:51 WIB</td>
+      <td>Regional</td>
+      <td>TRIBUNJATENG.COM, JAKARTA - Dipicu pinjam memi...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/menol...</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>34</td>
+      <td>Faktor Cuaca, Banyak Petani di Blora yang Bera...</td>
+      <td>Tayang: Rabu, 11 September 2024 10:50 WIB</td>
+      <td>Blora Sesarengan</td>
+      <td>TRIBUNJATENG.COM, BLORA - Luas tanam jagung di...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/fakto...</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>35</td>
+      <td>Workshop Penguatan Kapasitas Kelembagaan Koper...</td>
+      <td>Tayang: Rabu, 11 September 2024 10:49 WIB</td>
+      <td>Semarang</td>
+      <td>TRIBUNJATENG.COM, SEMARANG - Layanan bimbingan...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/works...</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>36</td>
+      <td>Beri Penguatan dan Arahan Tugas, Dirjen HAM Do...</td>
+      <td>Tayang: Rabu, 11 September 2024 10:38 WIB</td>
+      <td>Kumham Jateng</td>
+      <td>TRIBUNJATENG.COM, SEMARANG - Direktur Jenderal...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/beri-...</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>37</td>
+      <td>UPDATE Ranking FIFA Usai Hasil Imbang Timnas I...</td>
+      <td>Tayang: Selasa, 10 September 2024 22:45 WIB</td>
+      <td>Super Ball</td>
+      <td>TRIBUNJATENG.COM, JAKARTA - Timnas Indonesia k...</td>
+      <td>https://jateng.tribunnews.com/2024/09/10/updat...</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>38</td>
+      <td>Pelajar SMP Mabuk Leci Aniaya Siswa SD di Temb...</td>
+      <td>Tayang: Senin, 9 September 2024 15:41 WIB</td>
+      <td>Semarang</td>
+      <td>TRIBUNJATENG.COM, SEMARANG - Video seorang ana...</td>
+      <td>https://jateng.tribunnews.com/2024/09/09/pelaj...</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>39</td>
+      <td>VIRAL Haru Siswa Sekelas Iuran Belikan Sepeda ...</td>
+      <td>Tayang: Selasa, 10 September 2024 14:00 WIB</td>
+      <td>Jawa Tengah</td>
+      <td>TRIBUNJATENG.COM, KEBUMEN - Kisah siswa satu k...</td>
+      <td>https://jateng.tribunnews.com/2024/09/10/viral...</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>40</td>
+      <td>Tengku Firmansyah Unggah Potret Dirinya Saat S...</td>
+      <td>Tayang: Rabu, 11 September 2024 10:38 WIB</td>
+      <td>Gosipi</td>
+      <td>Tengku Firmansyah Unggah Potret Dirinya Saat S...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/tengk...</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>41</td>
+      <td>Harga Emas Antam di Semarang Hari Ini Rabu 11 ...</td>
+      <td>Tayang: Rabu, 11 September 2024 10:37 WIB</td>
+      <td>Bisnis</td>
+      <td>TRIBUNJATENG.COM, SEMARANG - Harga Emas Antam ...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/harga...</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>42</td>
+      <td>jadwal Film Bioskop Pati Hari Ini Rabu 11 Sept...</td>
+      <td>Tayang: Rabu, 11 September 2024 10:36 WIB</td>
+      <td>Pati Smartcity</td>
+      <td>TRIBUNJATENG.COM, PATI - Berikut adalah jadwal...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/jadwa...</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>43</td>
+      <td>Vonis Hakim Malah Lebih Berat, Hukuman SYL Dit...</td>
+      <td>Tayang: Rabu, 11 September 2024 10:35 WIB</td>
+      <td>Nasional</td>
+      <td>TRIBUNJATENG.COM, JAKARTA - Upaya banding yang...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/vonis...</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>44</td>
+      <td>Punya Foto Kejadian, Ini Kesaksian Nazrudin, S...</td>
+      <td>Tayang: Rabu, 11 September 2024 10:33 WIB</td>
+      <td>Regional</td>
+      <td>TRIBUNJATENG.COM - Saksi-saksi baru terus bemu...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/punya...</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>45</td>
+      <td>Pelatih Australia Sejak Awal Sudah Soroti Maar...</td>
+      <td>Tayang: Rabu, 11 September 2024 10:29 WIB</td>
+      <td>Super Ball</td>
+      <td>TRIBUNJATENG.COM, JAKARTA  - Kiper Timnas Indo...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/pelat...</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>46</td>
+      <td>Honda Big BOS Sulawesi Journey 2 Hadirkan Kege...</td>
+      <td>Tayang: Rabu, 11 September 2024 10:18 WIB</td>
+      <td>Otomotif</td>
+      <td>TRIBUNJATENG.COM, MAKASSAR - Honda Big BOS (Bi...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/honda...</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>47</td>
+      <td>Indosat Berdayakan Sektor Perbankan dan Keuang...</td>
+      <td>Tayang: Rabu, 11 September 2024 10:17 WIB</td>
+      <td>Bisnis</td>
+      <td>TRIBUNJATENG.COM, SEMARANG – Indosat Ooredoo H...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/indos...</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>48</td>
+      <td>Dokter Kabur Tinggalkan Jasad Pasien Setelah M...</td>
+      <td>Tayang: Rabu, 11 September 2024 06:34 WIB</td>
+      <td>Internasional</td>
+      <td>TRIBUNJATENG.COM, NEW DELHI - Di India, seoran...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/dokte...</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>49</td>
+      <td>Cita-Cita Kuliah Gadis Penjual Gorengan di Pad...</td>
+      <td>Tayang: Rabu, 11 September 2024 05:38 WIB</td>
+      <td>Nasional</td>
+      <td>TRIBUNJATENG.COM - Gadis penjual gorengan di P...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/cita-...</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>50</td>
+      <td>Chord Iwan Fals Aku Milikmu, Kunci Gitar dari C</td>
+      <td>Tayang: Rabu, 11 September 2024 05:34 WIB</td>
+      <td>Musik</td>
+      <td>TRIBUNJATENG.COM - Berikut chord kunci gitar A...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/chord...</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>51</td>
+      <td>KPK Sita Uang Tunai dan Bukti Elektronik saat ...</td>
+      <td>Tayang: Rabu, 11 September 2024 05:23 WIB</td>
+      <td>Nasional</td>
+      <td>TRIBUNJATENG.COM, JAKARTA - Komisi Pemberantas...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/kpk-s...</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>52</td>
+      <td>Kecelakaan Helikopter saat Bawa Buron, Kepala ...</td>
+      <td>Tayang: Rabu, 11 September 2024 05:49 WIB</td>
+      <td>Internasional</td>
+      <td>TRIBUNJATENG.COM, SAN SALVADOR - Kecelakaan he...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/kecel...</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>53</td>
+      <td>KPK: Ada Satu Bakal Calon Kepala Daerah Bersta...</td>
+      <td>Tayang: Rabu, 11 September 2024 06:48 WIB</td>
+      <td>Nasional</td>
+      <td>TRIBUNJATENG.COM, JAKARTA - Ada satu bakal cal...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/kpk-a...</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>54</td>
+      <td>Ruang Sekretariat DPRD Riau Digeledah Terkait ...</td>
+      <td>Tayang: Rabu, 11 September 2024 06:08 WIB</td>
+      <td>Nasional</td>
+      <td>TRIBUNJATENG.COM, PEKANBARU – Polisi menggeled...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/ruang...</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>55</td>
+      <td>BREAKING NEWS: Kandang Ayam di Hadipolo Kudus ...</td>
+      <td>Tayang: Rabu, 11 September 2024 07:43 WIB</td>
+      <td>Muria</td>
+      <td>TRIBUNJATENG.COM, KUDUS - Kebakaran melanda se...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/break...</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>56</td>
+      <td>Pengendara Motor Tewas Terseret Truk Setelah D...</td>
+      <td>Tayang: Rabu, 11 September 2024 07:57 WIB</td>
+      <td>Nasional</td>
+      <td>TRIBUNJATENG.COM, DENPASAR - Pria pengendara s...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/penge...</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>57</td>
+      <td>3 Nyawa Melayang dalam Kecelakaan Maut Mobilio...</td>
+      <td>Tayang: Rabu, 11 September 2024 07:03 WIB</td>
+      <td>Nasional</td>
+      <td>TRIBUNJATENG.COM - Senin (9/9/2024), kecelakaa...</td>
+      <td>https://jateng.tribunnews.com/2024/09/11/3-nya...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-crawling-data">Pengertian Crawling Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#melakukan-import-library-yang-dibutuhkan">1. Melakukan import library yang dibutuhkan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-halaman-website-dan-memeriksa-status-request">2. Mengambil Halaman Website dan Memeriksa status request</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menemukan-dan-mengekstrak-150-berita">3. Menemukan dan Mengekstrak 150 Berita</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-setiap-artikel-berita">4. Mengambil data dari setiap artikel berita</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-data-yang-di-crowling-ke-dalam-tabel">5. Menampilkan data yang di crowling ke dalam tabel</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

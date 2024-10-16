@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Preprocessing &#8212; My sample book</title>
+    <title>Tugas 3 &#8212; My sample book</title>
   
   
   
@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = '210411100177 Prio Budi Laksono Tugas 2 PPW';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tugas 2" href="210411100177%20Prio%20Budi%20Laksono%20Tugas%203%20PPW.html" />
-    <link rel="prev" title="Crawling Website TribunJateng" href="210411100177%20Prio%20Budi%20Laksono%20PPW%20Crawling%20Data%20Web.html" />
+    <link rel="next" title="Tugas 4" href="210411100177%20Prio%20Budi%20Laksono%20Tugas%204%20PPW.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,19 +180,8 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="210411100177%20Prio%20Budi%20Laksono%20PPW%20Crawling%20Data%20Web.html">Crawling Website TribunJateng</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Preprocessing</strong></a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="210411100177%20Prio%20Budi%20Laksono%20Tugas%203%20PPW.html">Tugas 2</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="210411100177%20Prio%20Budi%20Laksono%20Tugas%204%20PPW.html">Prio Budi Laksono</a></li>
-
-
-
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="210411100177%20Prio%20Budi%20Laksono%20Tugas%204%20PPW.html">Tugas 4</a></li>
 </ul>
 
     </div>
@@ -378,7 +367,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Preprocessing</h1>
+    <h1>Tugas 3</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -388,18 +377,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Preprocessing</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning">Cleaning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-folding">CASE FOLDING</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenization">TOKENIZATION</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing"><strong>Preprocessing</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cleansing">Cleansing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#case-folding">CASE FOLDING</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenization">TOKENIZATION</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stopword-removal">STOPWORD REMOVAL</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf-term-frequency-inverse-document-frequency"><strong>TF-IDF (Term Frequency-Inverse Document Frequency)</strong></a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf-term-frequency-inverse-document-frequency"><strong>TF-IDF (Term Frequency-Inverse Document Frequency)</strong></a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -410,10 +396,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p><strong>PRIO BUDI LAKSONO</strong></p>
-<p><strong>210411100177</strong></p>
-<p><strong>TUGAS 2</strong></p>
-<p><strong>Preprocessing data dari Crawling data website Tribun News</strong></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-3">
+<h1>Tugas 3<a class="headerlink" href="#tugas-3" title="Link to this heading">#</a></h1>
+<p>Prio Budi Laksono</p>
+<p>210411100177</p>
+<p>Preprocessing hasil crawling data dari <a class="reference external" href="http://jatim.tribunnews.com">jatim.tribunnews.com</a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -460,7 +447,7 @@ document.write(`
     <span class="k">return</span> <span class="kc">None</span>
 
 <span class="c1"># Fungsi untuk mendapatkan artikel dari suatu kategori</span>
-<span class="k">def</span> <span class="nf">get_articles</span><span class="p">(</span><span class="n">category_url</span><span class="p">,</span> <span class="n">category_name</span><span class="p">,</span> <span class="n">max_articles</span><span class="o">=</span><span class="mi">50</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">get_articles</span><span class="p">(</span><span class="n">category_url</span><span class="p">,</span> <span class="n">category_name</span><span class="p">,</span> <span class="n">max_articles</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
     <span class="n">articles</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">page</span> <span class="o">=</span> <span class="mi">1</span>
     
@@ -511,7 +498,7 @@ document.write(`
 <span class="n">all_articles</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">category_name</span><span class="p">,</span> <span class="n">category_url</span> <span class="ow">in</span> <span class="n">categories</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Menambang kategori </span><span class="si">{</span><span class="n">category_name</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
-    <span class="n">articles</span> <span class="o">=</span> <span class="n">get_articles</span><span class="p">(</span><span class="n">category_url</span><span class="p">,</span> <span class="n">category_name</span><span class="p">,</span> <span class="n">max_articles</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">articles</span> <span class="o">=</span> <span class="n">get_articles</span><span class="p">(</span><span class="n">category_url</span><span class="p">,</span> <span class="n">category_name</span><span class="p">,</span> <span class="n">max_articles</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
     <span class="n">all_articles</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">articles</span><span class="p">)</span>
 
 <span class="c1"># Simpan ke dalam DataFrame</span>
@@ -608,82 +595,12 @@ Proses penambangan data selesai, data tersimpan dalam &#39;tribunnews_articles.c
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>judul</th>
-      <th>isi_berita</th>
-      <th>tanggal</th>
-      <th>kategori</th>
-      <th>url</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Peluang Menggiurkan Bisnis Travel, Tips dan St...</td>
-      <td>TRIBUNJATIM.COM - Bisnis travel menawarkan ber...</td>
-      <td>Tayang: Selasa, 10 September 2024 15:09 WIB</td>
-      <td>Travel</td>
-      <td>https://jatim.tribunnews.com/2024/09/10/peluan...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>TWA Kawah Ijen Dibuka, Bupati Ipuk Fiestiandan...</td>
-      <td>Laporan Wartawan Tribun Jatim Network, Aflahul...</td>
-      <td>Tayang: Selasa, 10 September 2024 12:56 WIB</td>
-      <td>Destinasi</td>
-      <td>https://jatim.tribunnews.com/2024/09/10/twa-ka...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Cicipi Tongseng Ayam Bu Mumpuni, Rekomendasi K...</td>
-      <td>Laporan Wartawan TribunJatim.com, Sofyan Arif ...</td>
-      <td>Tayang: Senin, 9 September 2024 02:22 WIB</td>
-      <td>Kuliner</td>
-      <td>https://jatim.tribunnews.com/2024/09/09/cicipi...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Jebolan Masterchef Indonesia Mario Oswin Sajik...</td>
-      <td>Laporan Wartawan TribunJatim.com, Nurika Anisa...</td>
-      <td>Tayang: Rabu, 4 September 2024 19:10 WIB</td>
-      <td>Kuliner</td>
-      <td>https://jatim.tribunnews.com/2024/09/04/jebola...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Coba Keseruan Main Peran Laundry Staff di KidZ...</td>
-      <td>Laporan Wartawan TribunJatim.com, Fikri Firman...</td>
-      <td>Tayang: Rabu, 4 September 2024 16:14 WIB</td>
-      <td>Destinasi</td>
-      <td>https://jatim.tribunnews.com/2024/09/04/coba-k...</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
 </div>
 <section id="preprocessing">
-<h1><strong>Preprocessing</strong><a class="headerlink" href="#preprocessing" title="Link to this heading">#</a></h1>
+<h2><strong>Preprocessing</strong><a class="headerlink" href="#preprocessing" title="Link to this heading">#</a></h2>
 <p>Preprocessing adalah proses membersihkan dan mempersiapkan data mentah agar siap digunakan oleh model machine learning. Ini meliputi penanganan data yang hilang, normalisasi, mengubah data kategori menjadi angka, dan membersihkan teks. Tujuannya agar data lebih mudah dipahami dan diolah oleh model untuk hasil yang lebih akurat, Berikut adalah beberapa langkah umum dalam pre-processing teks:</p>
-<section id="cleaning">
-<h2>Cleaning<a class="headerlink" href="#cleaning" title="Link to this heading">#</a></h2>
+<section id="cleansing">
+<h3>Cleansing<a class="headerlink" href="#cleansing" title="Link to this heading">#</a></h3>
 <p>Proses cleansing data adalah tahap pembersihan teks dari elemen-elemen yang tidak relevan terhadap hasil klasifikasi sentimen. Beberapa komponen yang tidak berpengaruh terhadap sentimen, seperti URL, tag HTML, emoji, simbol, angka, dan tanda baca (~!&#64;#$%^&amp;*{}&lt;&gt;:|), dihapus dari dokumen ulasan. Elemen-elemen tersebut dihilangkan untuk mengurangi kebisingan (noise) dalam data. Setelah dihapus, elemen ini digantikan dengan spasi agar struktur kalimat tetap terjaga. Dengan demikian, data menjadi lebih fokus pada kata-kata yang relevan untuk menentukan sentimen, sehingga membantu meningkatkan akurasi model prediksi sentimen.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -738,86 +655,10 @@ Proses penambangan data selesai, data tersimpan dalam &#39;tribunnews_articles.c
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>judul</th>
-      <th>isi_berita</th>
-      <th>tanggal</th>
-      <th>kategori</th>
-      <th>url</th>
-      <th>berita_clean</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Peluang Menggiurkan Bisnis Travel, Tips dan St...</td>
-      <td>TRIBUNJATIM.COM - Bisnis travel menawarkan ber...</td>
-      <td>Tayang: Selasa, 10 September 2024 15:09 WIB</td>
-      <td>Travel</td>
-      <td>https://jatim.tribunnews.com/2024/09/10/peluan...</td>
-      <td>TRIBUNJATIMCOM  Bisnis travel menawarkan berba...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>TWA Kawah Ijen Dibuka, Bupati Ipuk Fiestiandan...</td>
-      <td>Laporan Wartawan Tribun Jatim Network, Aflahul...</td>
-      <td>Tayang: Selasa, 10 September 2024 12:56 WIB</td>
-      <td>Destinasi</td>
-      <td>https://jatim.tribunnews.com/2024/09/10/twa-ka...</td>
-      <td>Laporan Wartawan Tribun Jatim Network Aflahul ...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Cicipi Tongseng Ayam Bu Mumpuni, Rekomendasi K...</td>
-      <td>Laporan Wartawan TribunJatim.com, Sofyan Arif ...</td>
-      <td>Tayang: Senin, 9 September 2024 02:22 WIB</td>
-      <td>Kuliner</td>
-      <td>https://jatim.tribunnews.com/2024/09/09/cicipi...</td>
-      <td>Laporan Wartawan TribunJatimcom Sofyan Arif TR...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Jebolan Masterchef Indonesia Mario Oswin Sajik...</td>
-      <td>Laporan Wartawan TribunJatim.com, Nurika Anisa...</td>
-      <td>Tayang: Rabu, 4 September 2024 19:10 WIB</td>
-      <td>Kuliner</td>
-      <td>https://jatim.tribunnews.com/2024/09/04/jebola...</td>
-      <td>Laporan Wartawan TribunJatimcom Nurika Anisa T...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Coba Keseruan Main Peran Laundry Staff di KidZ...</td>
-      <td>Laporan Wartawan TribunJatim.com, Fikri Firman...</td>
-      <td>Tayang: Rabu, 4 September 2024 16:14 WIB</td>
-      <td>Destinasi</td>
-      <td>https://jatim.tribunnews.com/2024/09/04/coba-k...</td>
-      <td>Laporan Wartawan TribunJatimcom Fikri Firmansy...</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
 </div>
 </section>
 <section id="case-folding">
-<h2>CASE FOLDING<a class="headerlink" href="#case-folding" title="Link to this heading">#</a></h2>
+<h3>CASE FOLDING<a class="headerlink" href="#case-folding" title="Link to this heading">#</a></h3>
 <p>Pada tahap case folding, semua huruf kapital dalam dokumen ulasan diubah menjadi huruf kecil, atau disebut lowercase. Tujuan dari langkah ini adalah untuk menghilangkan redundansi data yang hanya disebabkan oleh perbedaan kapitalisasi. Misalnya, kata “Ekonomi” dan “ekonomi” secara teknis sama dalam analisis teks, namun tanpa case folding, komputer akan menganggapnya berbeda. Dengan mengonversi seluruh teks menjadi huruf kecil, semua variasi penulisan diseragamkan, sehingga mencegah duplikasi penghitungan atau kesalahan dalam interpretasi data.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -834,92 +675,10 @@ Proses penambangan data selesai, data tersimpan dalam &#39;tribunnews_articles.c
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>judul</th>
-      <th>isi_berita</th>
-      <th>tanggal</th>
-      <th>kategori</th>
-      <th>url</th>
-      <th>berita_clean</th>
-      <th>case_folding</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Peluang Menggiurkan Bisnis Travel, Tips dan St...</td>
-      <td>TRIBUNJATIM.COM - Bisnis travel menawarkan ber...</td>
-      <td>Tayang: Selasa, 10 September 2024 15:09 WIB</td>
-      <td>Travel</td>
-      <td>https://jatim.tribunnews.com/2024/09/10/peluan...</td>
-      <td>TRIBUNJATIMCOM  Bisnis travel menawarkan berba...</td>
-      <td>tribunjatimcom  bisnis travel menawarkan berba...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>TWA Kawah Ijen Dibuka, Bupati Ipuk Fiestiandan...</td>
-      <td>Laporan Wartawan Tribun Jatim Network, Aflahul...</td>
-      <td>Tayang: Selasa, 10 September 2024 12:56 WIB</td>
-      <td>Destinasi</td>
-      <td>https://jatim.tribunnews.com/2024/09/10/twa-ka...</td>
-      <td>Laporan Wartawan Tribun Jatim Network Aflahul ...</td>
-      <td>laporan wartawan tribun jatim network aflahul ...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Cicipi Tongseng Ayam Bu Mumpuni, Rekomendasi K...</td>
-      <td>Laporan Wartawan TribunJatim.com, Sofyan Arif ...</td>
-      <td>Tayang: Senin, 9 September 2024 02:22 WIB</td>
-      <td>Kuliner</td>
-      <td>https://jatim.tribunnews.com/2024/09/09/cicipi...</td>
-      <td>Laporan Wartawan TribunJatimcom Sofyan Arif TR...</td>
-      <td>laporan wartawan tribunjatimcom sofyan arif tr...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Jebolan Masterchef Indonesia Mario Oswin Sajik...</td>
-      <td>Laporan Wartawan TribunJatim.com, Nurika Anisa...</td>
-      <td>Tayang: Rabu, 4 September 2024 19:10 WIB</td>
-      <td>Kuliner</td>
-      <td>https://jatim.tribunnews.com/2024/09/04/jebola...</td>
-      <td>Laporan Wartawan TribunJatimcom Nurika Anisa T...</td>
-      <td>laporan wartawan tribunjatimcom nurika anisa t...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Coba Keseruan Main Peran Laundry Staff di KidZ...</td>
-      <td>Laporan Wartawan TribunJatim.com, Fikri Firman...</td>
-      <td>Tayang: Rabu, 4 September 2024 16:14 WIB</td>
-      <td>Destinasi</td>
-      <td>https://jatim.tribunnews.com/2024/09/04/coba-k...</td>
-      <td>Laporan Wartawan TribunJatimcom Fikri Firmansy...</td>
-      <td>laporan wartawan tribunjatimcom fikri firmansy...</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
 </div>
 </section>
 <section id="tokenization">
-<h2>TOKENIZATION<a class="headerlink" href="#tokenization" title="Link to this heading">#</a></h2>
+<h3>TOKENIZATION<a class="headerlink" href="#tokenization" title="Link to this heading">#</a></h3>
 <p>Tokenization adalah tahap di mana setiap kata dalam sebuah dokumen dipecah menjadi unit-unit kata yang lebih kecil, atau disebut token. Proses ini memisahkan kata-kata berdasarkan spasi, sehingga setiap kata yang terpisah oleh spasi dianggap sebagai token tersendiri. Sebagai contoh, kalimat “Upaya agar ekonomi stabil” akan diuraikan menjadi token [“Upaya”, “agar”, “ekonomi”, “stabil”].</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -933,95 +692,8 @@ Proses penambangan data selesai, data tersimpan dalam &#39;tribunnews_articles.c
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>judul</th>
-      <th>isi_berita</th>
-      <th>tanggal</th>
-      <th>kategori</th>
-      <th>url</th>
-      <th>berita_clean</th>
-      <th>case_folding</th>
-      <th>tokenize</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Peluang Menggiurkan Bisnis Travel, Tips dan St...</td>
-      <td>TRIBUNJATIM.COM - Bisnis travel menawarkan ber...</td>
-      <td>Tayang: Selasa, 10 September 2024 15:09 WIB</td>
-      <td>Travel</td>
-      <td>https://jatim.tribunnews.com/2024/09/10/peluan...</td>
-      <td>TRIBUNJATIMCOM  Bisnis travel menawarkan berba...</td>
-      <td>tribunjatimcom  bisnis travel menawarkan berba...</td>
-      <td>[tribunjatimcom, bisnis, travel, menawarkan, b...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>TWA Kawah Ijen Dibuka, Bupati Ipuk Fiestiandan...</td>
-      <td>Laporan Wartawan Tribun Jatim Network, Aflahul...</td>
-      <td>Tayang: Selasa, 10 September 2024 12:56 WIB</td>
-      <td>Destinasi</td>
-      <td>https://jatim.tribunnews.com/2024/09/10/twa-ka...</td>
-      <td>Laporan Wartawan Tribun Jatim Network Aflahul ...</td>
-      <td>laporan wartawan tribun jatim network aflahul ...</td>
-      <td>[laporan, wartawan, tribun, jatim, network, af...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Cicipi Tongseng Ayam Bu Mumpuni, Rekomendasi K...</td>
-      <td>Laporan Wartawan TribunJatim.com, Sofyan Arif ...</td>
-      <td>Tayang: Senin, 9 September 2024 02:22 WIB</td>
-      <td>Kuliner</td>
-      <td>https://jatim.tribunnews.com/2024/09/09/cicipi...</td>
-      <td>Laporan Wartawan TribunJatimcom Sofyan Arif TR...</td>
-      <td>laporan wartawan tribunjatimcom sofyan arif tr...</td>
-      <td>[laporan, wartawan, tribunjatimcom, sofyan, ar...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Jebolan Masterchef Indonesia Mario Oswin Sajik...</td>
-      <td>Laporan Wartawan TribunJatim.com, Nurika Anisa...</td>
-      <td>Tayang: Rabu, 4 September 2024 19:10 WIB</td>
-      <td>Kuliner</td>
-      <td>https://jatim.tribunnews.com/2024/09/04/jebola...</td>
-      <td>Laporan Wartawan TribunJatimcom Nurika Anisa T...</td>
-      <td>laporan wartawan tribunjatimcom nurika anisa t...</td>
-      <td>[laporan, wartawan, tribunjatimcom, nurika, an...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Coba Keseruan Main Peran Laundry Staff di KidZ...</td>
-      <td>Laporan Wartawan TribunJatim.com, Fikri Firman...</td>
-      <td>Tayang: Rabu, 4 September 2024 16:14 WIB</td>
-      <td>Destinasi</td>
-      <td>https://jatim.tribunnews.com/2024/09/04/coba-k...</td>
-      <td>Laporan Wartawan TribunJatimcom Fikri Firmansy...</td>
-      <td>laporan wartawan tribunjatimcom fikri firmansy...</td>
-      <td>[laporan, wartawan, tribunjatimcom, fikri, fir...</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
 </div>
+</section>
 <section id="stopword-removal">
 <h3>STOPWORD REMOVAL<a class="headerlink" href="#stopword-removal" title="Link to this heading">#</a></h3>
 <p>Stopword removal adalah proses menghapus kata-kata yang dianggap tidak penting atau tidak memiliki makna signifikan dalam analisis teks, seperti “dan,” “di,” “yang,” atau “itu.” Kata-kata ini sering muncul dalam kalimat tetapi tidak memberikan informasi penting untuk pemrosesan atau analisis lebih lanjut. Dengan menghapus stopwords, data teks menjadi lebih ringkas dan fokus hanya pada kata-kata yang memiliki bobot lebih besar dalam analisis, seperti saat melakukan klasifikasi atau pemodelan teks.</p>
@@ -1030,13 +702,6 @@ Proses penambangan data selesai, data tersimpan dalam &#39;tribunnews_articles.c
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
 <span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
 <span class="n">stop_words</span> <span class="o">=</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;indonesian&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package stopwords to
-[nltk_data]     C:\Users\pblak\AppData\Roaming\nltk_data...
-[nltk_data]   Package stopwords is already up-to-date!
 </pre></div>
 </div>
 </div>
@@ -1054,106 +719,11 @@ Proses penambangan data selesai, data tersimpan dalam &#39;tribunnews_articles.c
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>judul</th>
-      <th>isi_berita</th>
-      <th>tanggal</th>
-      <th>kategori</th>
-      <th>url</th>
-      <th>berita_clean</th>
-      <th>case_folding</th>
-      <th>tokenize</th>
-      <th>stopword_removal</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Peluang Menggiurkan Bisnis Travel, Tips dan St...</td>
-      <td>TRIBUNJATIM.COM - Bisnis travel menawarkan ber...</td>
-      <td>Tayang: Selasa, 10 September 2024 15:09 WIB</td>
-      <td>Travel</td>
-      <td>https://jatim.tribunnews.com/2024/09/10/peluan...</td>
-      <td>TRIBUNJATIMCOM  Bisnis travel menawarkan berba...</td>
-      <td>tribunjatimcom  bisnis travel menawarkan berba...</td>
-      <td>[tribunjatimcom, bisnis, travel, menawarkan, b...</td>
-      <td>tribunjatimcom bisnis travel menawarkan peluan...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>TWA Kawah Ijen Dibuka, Bupati Ipuk Fiestiandan...</td>
-      <td>Laporan Wartawan Tribun Jatim Network, Aflahul...</td>
-      <td>Tayang: Selasa, 10 September 2024 12:56 WIB</td>
-      <td>Destinasi</td>
-      <td>https://jatim.tribunnews.com/2024/09/10/twa-ka...</td>
-      <td>Laporan Wartawan Tribun Jatim Network Aflahul ...</td>
-      <td>laporan wartawan tribun jatim network aflahul ...</td>
-      <td>[laporan, wartawan, tribun, jatim, network, af...</td>
-      <td>laporan wartawan tribun jatim network aflahul ...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Cicipi Tongseng Ayam Bu Mumpuni, Rekomendasi K...</td>
-      <td>Laporan Wartawan TribunJatim.com, Sofyan Arif ...</td>
-      <td>Tayang: Senin, 9 September 2024 02:22 WIB</td>
-      <td>Kuliner</td>
-      <td>https://jatim.tribunnews.com/2024/09/09/cicipi...</td>
-      <td>Laporan Wartawan TribunJatimcom Sofyan Arif TR...</td>
-      <td>laporan wartawan tribunjatimcom sofyan arif tr...</td>
-      <td>[laporan, wartawan, tribunjatimcom, sofyan, ar...</td>
-      <td>laporan wartawan tribunjatimcom sofyan arif tr...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Jebolan Masterchef Indonesia Mario Oswin Sajik...</td>
-      <td>Laporan Wartawan TribunJatim.com, Nurika Anisa...</td>
-      <td>Tayang: Rabu, 4 September 2024 19:10 WIB</td>
-      <td>Kuliner</td>
-      <td>https://jatim.tribunnews.com/2024/09/04/jebola...</td>
-      <td>Laporan Wartawan TribunJatimcom Nurika Anisa T...</td>
-      <td>laporan wartawan tribunjatimcom nurika anisa t...</td>
-      <td>[laporan, wartawan, tribunjatimcom, nurika, an...</td>
-      <td>laporan wartawan tribunjatimcom nurika anisa t...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Coba Keseruan Main Peran Laundry Staff di KidZ...</td>
-      <td>Laporan Wartawan TribunJatim.com, Fikri Firman...</td>
-      <td>Tayang: Rabu, 4 September 2024 16:14 WIB</td>
-      <td>Destinasi</td>
-      <td>https://jatim.tribunnews.com/2024/09/04/coba-k...</td>
-      <td>Laporan Wartawan TribunJatimcom Fikri Firmansy...</td>
-      <td>laporan wartawan tribunjatimcom fikri firmansy...</td>
-      <td>[laporan, wartawan, tribunjatimcom, fikri, fir...</td>
-      <td>laporan wartawan tribunjatimcom fikri firmansy...</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
 </div>
 </section>
 </section>
-</section>
 <section id="tf-idf-term-frequency-inverse-document-frequency">
-<h1><strong>TF-IDF (Term Frequency-Inverse Document Frequency)</strong><a class="headerlink" href="#tf-idf-term-frequency-inverse-document-frequency" title="Link to this heading">#</a></h1>
+<h2><strong>TF-IDF (Term Frequency-Inverse Document Frequency)</strong><a class="headerlink" href="#tf-idf-term-frequency-inverse-document-frequency" title="Link to this heading">#</a></h2>
 <p>TF-IDF adalah metode statistik yang digunakan untuk mengevaluasi pentingnya suatu kata dalam sebuah dokumen relatif terhadap koleksi dokumen lainnya. TF-IDF sering digunakan dalam tugas seperti penggalian teks, penambangan informasi, dan pemodelan pembelajaran mesin berbasis teks.
 Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam dokumen, dan Inverse Document Frequency (IDF), yang menilai seberapa jarang kata tersebut muncul di seluruh dokumen dalam koleksi.</p>
 <p>TF-IDF bekerja dengan memberikan bobot lebih tinggi pada kata-kata yang sering muncul dalam sebuah dokumen, tetapi jarang muncul di dokumen lain, sehingga membantu mengidentifikasi kata-kata yang paling relevan.</p>
@@ -1181,294 +751,70 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>aaliyah</th>
-      <th>abdul</th>
-      <th>abidin</th>
-      <th>abis</th>
-      <th>abrian</th>
-      <th>acara</th>
-      <th>aceh</th>
-      <th>acehsumut</th>
-      <th>achmad</th>
-      <th>act</th>
-      <th>...</th>
-      <th>you</th>
-      <th>yours</th>
-      <th>yuhu</th>
-      <th>yulia</th>
-      <th>yunita</th>
-      <th>yup</th>
-      <th>yusron</th>
-      <th>zhong</th>
-      <th>zona</th>
-      <th>zoo</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.00000</td>
-      <td>...</td>
-      <td>0.00000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.036473</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.00000</td>
-      <td>...</td>
-      <td>0.00000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.00000</td>
-      <td>...</td>
-      <td>0.00000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.00000</td>
-      <td>...</td>
-      <td>0.00000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.00000</td>
-      <td>...</td>
-      <td>0.00000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.00000</td>
-      <td>...</td>
-      <td>0.00000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.00000</td>
-      <td>...</td>
-      <td>0.00000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.00000</td>
-      <td>...</td>
-      <td>0.00000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.04097</td>
-      <td>...</td>
-      <td>0.04097</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.00000</td>
-      <td>...</td>
-      <td>0.00000</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.075526</td>
-      <td>0.0</td>
-    </tr>
-  </tbody>
-</table>
-<p>10 rows × 2689 columns</p>
-</div></div></div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menginisialisasi TfidfVectorizer dengan normalisasi L2</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">norm</span><span class="o">=</span><span class="s1">&#39;l2&#39;</span><span class="p">)</span>
+
+<span class="c1"># Menghitung TF-IDF dengan normalisasi L2</span>
+<span class="n">tfidf_matrix</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;stopword_removal&#39;</span><span class="p">])</span>
+
+<span class="c1"># Mengubah hasilnya menjadi DataFrame</span>
+<span class="n">tfidf_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">tfidf_matrix</span><span class="o">.</span><span class="n">toarray</span><span class="p">(),</span> <span class="n">columns</span><span class="o">=</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">())</span>
+
+<span class="c1"># Menampilkan 10 baris pertama</span>
+<span class="n">tfidf_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">confusion_matrix</span>
+
+<span class="c1"># Asumsikan Anda memiliki DataFrame &#39;df&#39; dengan kolom &#39;stopword_removal&#39; dan &#39;kategori&#39;</span>
+<span class="c1"># Buat fitur (X) dan label (y)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">tfidf_df</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;kategori&#39;</span><span class="p">]</span>  <span class="c1"># Pastikan &#39;kategori&#39; adalah nama kolom yang benar</span>
+
+<span class="c1"># Pisahkan dataset menjadi set pelatihan dan pengujian (80% pelatihan, 20% pengujian)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Inisialisasi model Regresi Logistik</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1"># Latih model</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Lakukan prediksi pada set pengujian</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi model</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Confusion Matrix:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Hasil Klasifikasi:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">zero_division</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+
+
+<span class="c1"># Opsional, simpan model untuk digunakan nanti</span>
+<span class="kn">import</span> <span class="nn">joblib</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="s1">&#39;model_regresi_logistik.pkl&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1502,20 +848,20 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="210411100177%20Prio%20Budi%20Laksono%20PPW%20Crawling%20Data%20Web.html"
+       href="intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Crawling Website TribunJateng</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
       </div>
     </a>
     <a class="right-next"
-       href="210411100177%20Prio%20Budi%20Laksono%20Tugas%203%20PPW.html"
+       href="210411100177%20Prio%20Budi%20Laksono%20Tugas%204%20PPW.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tugas 2</p>
+        <p class="prev-next-title">Tugas 4</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1535,18 +881,15 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Preprocessing</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning">Cleaning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-folding">CASE FOLDING</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenization">TOKENIZATION</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing"><strong>Preprocessing</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cleansing">Cleansing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#case-folding">CASE FOLDING</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenization">TOKENIZATION</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stopword-removal">STOPWORD REMOVAL</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf-term-frequency-inverse-document-frequency"><strong>TF-IDF (Term Frequency-Inverse Document Frequency)</strong></a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf-term-frequency-inverse-document-frequency"><strong>TF-IDF (Term Frequency-Inverse Document Frequency)</strong></a></li>
-</ul>
-
   </nav></div>
 
 </div></div>
