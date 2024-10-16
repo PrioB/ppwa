@@ -378,7 +378,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prio-budi-laksono">Prio Budi Laksono</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">210411100063</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">210411100177</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ppw-a">PPW A</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scraping-website-idntimes">Scraping website IDNtimes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengukur-kemiripan-antar-teks">Mengukur Kemiripan Antar Teks</a></li>
@@ -410,7 +410,7 @@ document.write(`
 <h2>Prio Budi Laksono<a class="headerlink" href="#prio-budi-laksono" title="Link to this heading">#</a></h2>
 </section>
 <section id="id1">
-<h2>210411100063<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<h2>210411100177<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 </section>
 <section id="ppw-a">
 <h2>PPW A<a class="headerlink" href="#ppw-a" title="Link to this heading">#</a></h2>
@@ -445,13 +445,13 @@ document.write(`
 <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
     <span class="c1"># Parsing halaman web</span>
     <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
-    
+
     <span class="c1"># Mengambil judul artikel</span>
     <span class="n">title</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-    
+
     <span class="c1"># Mengambil tanggal publikasi artikel dan membersihkan spasi berlebih</span>
     <span class="n">date</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-    
+
     <span class="c1"># Mengambil isi artikel dengan membersihkan konten tambahan</span>
     <span class="n">content</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span>
     <span class="n">article_text</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">p</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">content</span> <span class="k">if</span> <span class="n">p</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()])</span>
@@ -473,7 +473,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-cd8f244d-b5c3-4ed0-8005-116152f5565d" class="colab-df-container">
+  <div id="df-e0531527-d11e-41ae-a679-2a5ff20369ac" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -510,7 +510,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-cd8f244d-b5c3-4ed0-8005-116152f5565d')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-e0531527-d11e-41ae-a679-2a5ff20369ac')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -562,12 +562,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-cd8f244d-b5c3-4ed0-8005-116152f5565d button.colab-df-convert');
+        document.querySelector('#df-e0531527-d11e-41ae-a679-2a5ff20369ac button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-cd8f244d-b5c3-4ed0-8005-116152f5565d');
+        const element = document.querySelector('#df-e0531527-d11e-41ae-a679-2a5ff20369ac');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -628,7 +628,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a27e3986-14b0-474e-94b8-10168502e8fa" class="colab-df-container">
+  <div id="df-d6ffba9b-cadb-4560-80a8-cd276901e9d5" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -665,7 +665,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-a27e3986-14b0-474e-94b8-10168502e8fa')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d6ffba9b-cadb-4560-80a8-cd276901e9d5')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -717,12 +717,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-a27e3986-14b0-474e-94b8-10168502e8fa button.colab-df-convert');
+        document.querySelector('#df-d6ffba9b-cadb-4560-80a8-cd276901e9d5 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-a27e3986-14b0-474e-94b8-10168502e8fa');
+        const element = document.querySelector('#df-d6ffba9b-cadb-4560-80a8-cd276901e9d5');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -771,7 +771,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8a7bade4-7401-4013-8393-630ec967a787" class="colab-df-container">
+  <div id="df-4f1648c3-a923-47c9-867c-7b28986217ce" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -808,7 +808,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-8a7bade4-7401-4013-8393-630ec967a787')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-4f1648c3-a923-47c9-867c-7b28986217ce')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -860,12 +860,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-8a7bade4-7401-4013-8393-630ec967a787 button.colab-df-convert');
+        document.querySelector('#df-4f1648c3-a923-47c9-867c-7b28986217ce button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-8a7bade4-7401-4013-8393-630ec967a787');
+        const element = document.querySelector('#df-4f1648c3-a923-47c9-867c-7b28986217ce');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -896,22 +896,22 @@ document.write(`
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cleansing</span><span class="p">(</span><span class="n">Content</span><span class="p">):</span>
     <span class="c1"># Menghapus whitespace di awal dan akhir teks</span>
     <span class="n">Content</span> <span class="o">=</span> <span class="n">Content</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-    
+
     <span class="c1"># Menghapus tanda baca dan karakter khusus</span>
     <span class="n">Content</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="si">}</span><span class="s2">]&quot;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">Content</span><span class="p">)</span>
-    
+
     <span class="c1"># Menghapus angka</span>
     <span class="n">Content</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\d+&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">Content</span><span class="p">)</span>
-    
+
     <span class="c1"># Menghapus huruf tunggal (opsional, tergantung kebutuhan)</span>
     <span class="n">Content</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\b[a-zA-Z]\b&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">Content</span><span class="p">)</span>
-    
+
     <span class="c1"># Menghapus karakter-karakter non-standar seperti â</span>
     <span class="n">Content</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[^\x00-\x7F]+&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">Content</span><span class="p">)</span>
-    
+
     <span class="c1"># Menghapus spasi ganda</span>
     <span class="n">Content</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\s+&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">Content</span><span class="p">)</span>
-    
+
     <span class="k">return</span> <span class="n">Content</span>
 
 <span class="c1"># Terapkan fungsi cleansing pada kolom &#39;Content&#39;</span>
@@ -924,7 +924,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a4b531bd-d195-4886-979d-c55b398dfc58" class="colab-df-container">
+  <div id="df-394f55fa-022b-4e58-a9f3-c8f1c26d55fa" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -961,7 +961,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-a4b531bd-d195-4886-979d-c55b398dfc58')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-394f55fa-022b-4e58-a9f3-c8f1c26d55fa')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1013,12 +1013,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-a4b531bd-d195-4886-979d-c55b398dfc58 button.colab-df-convert');
+        document.querySelector('#df-394f55fa-022b-4e58-a9f3-c8f1c26d55fa button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-a4b531bd-d195-4886-979d-c55b398dfc58');
+        const element = document.querySelector('#df-394f55fa-022b-4e58-a9f3-c8f1c26d55fa');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1256,8 +1256,8 @@ document.write(`
             <span class="n">adjacency_matrix</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">similarity</span>  <span class="c1"># Matrix is symmetric</span>
 
 <span class="c1"># Create a DataFrame for better visualization</span>
-<span class="n">adjacency_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">adjacency_matrix</span><span class="p">,</span> 
-                            <span class="n">index</span><span class="o">=</span><span class="n">tfidf_wide</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> 
+<span class="n">adjacency_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">adjacency_matrix</span><span class="p">,</span>
+                            <span class="n">index</span><span class="o">=</span><span class="n">tfidf_wide</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
                             <span class="n">columns</span><span class="o">=</span><span class="n">tfidf_wide</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
 
 <span class="c1"># Display the adjacency matrix</span>
@@ -2157,7 +2157,7 @@ Setiap tim akan memainkan tiga pertandingan mel...                              
     <span class="k">if</span> <span class="ow">not</span> <span class="n">isolated_nodes</span><span class="p">:</span>
         <span class="k">break</span>
     <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">isolated_nodes</span><span class="p">:</span>
-        <span class="n">similarities</span> <span class="o">=</span> <span class="p">[(</span><span class="n">other_node</span><span class="p">,</span> <span class="n">similarity_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">node</span><span class="p">,</span> <span class="n">other_node</span><span class="p">])</span> 
+        <span class="n">similarities</span> <span class="o">=</span> <span class="p">[(</span><span class="n">other_node</span><span class="p">,</span> <span class="n">similarity_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">node</span><span class="p">,</span> <span class="n">other_node</span><span class="p">])</span>
                         <span class="k">for</span> <span class="n">other_node</span> <span class="ow">in</span> <span class="n">largest_component</span><span class="p">]</span>
         <span class="n">most_similar_node</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">similarities</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span>
         <span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">most_similar_node</span><span class="p">)</span>
@@ -2237,7 +2237,7 @@ Setiap tim akan memainkan tiga pertandingan mel...                              
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/2086724bb2ac0d535bca623f201a26c15fe0b1edced8ccaed61c1bc8f75edd23.png" src="_images/2086724bb2ac0d535bca623f201a26c15fe0b1edced8ccaed61c1bc8f75edd23.png" />
+<img alt="_images/adbf32b0692d7b3e8ae53d7c887e1433a458b31e7dc33be3fe56fcca16ed3ff2.png" src="_images/adbf32b0692d7b3e8ae53d7c887e1433a458b31e7dc33be3fe56fcca16ed3ff2.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of nodes: 19
 Number of edges: 125
 Is the graph connected? True
@@ -2372,7 +2372,7 @@ Top 5 sentences by Betweenness Centrality:
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prio-budi-laksono">Prio Budi Laksono</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">210411100063</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">210411100177</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ppw-a">PPW A</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scraping-website-idntimes">Scraping website IDNtimes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengukur-kemiripan-antar-teks">Mengukur Kemiripan Antar Teks</a></li>
