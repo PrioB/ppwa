@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Tugas 3 &#8212; My sample book</title>
+    <title>Tugas 2 &#8212; My sample book</title>
   
   
   
@@ -61,7 +61,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Tugas 4" href="210411100177%20Prio%20Budi%20Laksono%20Tugas%204%20PPW.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+    <link rel="prev" title="Crawling Website TribunJateng" href="210411100177_Prio%20Budi%20Laksono_PPW_Crawling%20Data%20Web.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,7 +180,8 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="210411100177_Prio%20Budi%20Laksono_PPW_Crawling%20Data%20Web.html">Crawling Website TribunJateng</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="210411100177%20Prio%20Budi%20Laksono%20Tugas%204%20PPW.html">Tugas 4</a></li>
 </ul>
 
@@ -367,7 +368,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Tugas 3</h1>
+    <h1>Tugas 2</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -396,8 +397,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas-3">
-<h1>Tugas 3<a class="headerlink" href="#tugas-3" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-2">
+<h1>Tugas 2<a class="headerlink" href="#tugas-2" title="Link to this heading">#</a></h1>
 <p>Prio Budi Laksono</p>
 <p>210411100177</p>
 <p>Preprocessing hasil crawling data dari <a class="reference external" href="http://jatim.tribunnews.com">jatim.tribunnews.com</a></p>
@@ -450,30 +451,30 @@ document.write(`
 <span class="k">def</span> <span class="nf">get_articles</span><span class="p">(</span><span class="n">category_url</span><span class="p">,</span> <span class="n">category_name</span><span class="p">,</span> <span class="n">max_articles</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
     <span class="n">articles</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">page</span> <span class="o">=</span> <span class="mi">1</span>
-    
+
     <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">articles</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">max_articles</span><span class="p">:</span>
         <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">category_url</span><span class="si">}</span><span class="s1">?page=</span><span class="si">{</span><span class="n">page</span><span class="si">}</span><span class="s1">&#39;</span>  <span class="c1"># Periksa pola yang benar untuk paginasi</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mengambil: </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Output debug</span>
         <span class="n">soup</span> <span class="o">=</span> <span class="n">get_soup</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-        
+
         <span class="k">if</span> <span class="n">soup</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">break</span>
-        
+
         <span class="c1"># Cari artikel di halaman</span>
         <span class="n">article_list</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;h3&#39;</span><span class="p">)</span>  <span class="c1"># Berdasarkan tata letak yang diamati</span>
-        
+
         <span class="k">if</span> <span class="ow">not</span> <span class="n">article_list</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Tidak ada artikel ditemukan di halaman </span><span class="si">{</span><span class="n">page</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
             <span class="k">break</span>
-        
+
         <span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="n">article_list</span><span class="p">:</span>
             <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">articles</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">max_articles</span><span class="p">:</span>
                 <span class="k">break</span>
-            
+
             <span class="c1"># Ambil URL detail artikel</span>
             <span class="n">title_tag</span> <span class="o">=</span> <span class="n">article</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
             <span class="n">detail_url</span> <span class="o">=</span> <span class="n">title_tag</span><span class="p">[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">title_tag</span> <span class="k">else</span> <span class="kc">None</span>
-            
+
             <span class="k">if</span> <span class="n">detail_url</span><span class="p">:</span>
                 <span class="k">if</span> <span class="ow">not</span> <span class="n">detail_url</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">):</span>
                     <span class="n">detail_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://jatim.tribunnews.com</span><span class="si">{</span><span class="n">detail_url</span><span class="si">}</span><span class="s1">&#39;</span>
@@ -482,10 +483,10 @@ document.write(`
                 <span class="k">if</span> <span class="n">article_details</span><span class="p">:</span>
                     <span class="c1"># Tambahkan ke daftar artikel</span>
                     <span class="n">articles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">article_details</span><span class="p">)</span>
-        
+
         <span class="n">page</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># Beri jeda agar tidak terlalu cepat melakukan permintaan</span>
-        
+
     <span class="k">return</span> <span class="n">articles</span>
 
 <span class="c1"># URL Kategori</span>
@@ -848,12 +849,12 @@ Term Frequency (TF), yang menghitung seberapa sering sebuah kata muncul dalam do
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="210411100177_Prio%20Budi%20Laksono_PPW_Crawling%20Data%20Web.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+        <p class="prev-next-title">Crawling Website TribunJateng</p>
       </div>
     </a>
     <a class="right-next"
