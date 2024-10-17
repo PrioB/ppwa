@@ -1,0 +1,76 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 1314, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/usr/local/lib/python3.10/dist-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+import re
+import string
+import nltk
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from collections import Counter
+import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import TfidfVectorizer
+import networkx as nx
+import matplotlib.pyplot as plt
+nltk.download('punkt')
+nltk.download('stopwords')
+
+def scraping_artikel(url):
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.text, 'html.parser')
+        title = soup.find('h1').get_text().strip()
+        date = soup.find('time').get_text().strip()
+        content = soup.find_all('p')
+        teks_artikel = '\n'.join([p.get_text().strip() for p in content if p.get_text().strip()])
+        
+        return {'Judul': title, 'Tanggal': date, 'Konten': teks_artikel}
+    else:
+        print(f"Gagal mengambil artikel. Status code: {response.status_code}")
+        return None
+
+url = 'https://www.idntimes.com/sport/soccer/sandy-firdaus/kalah-dari-china-pssi-yakin-indonesia-masih-bisa-bersaing'
+data_artikel = scraping_artikel(url)
+
+data_df = pd.DataFrame([data_artikel]) if data_artikel else pd.DataFrame()
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+[0;32m<ipython-input-1-13842fa81760>[0m in [0;36m<cell line: 7>[0;34m()[0m
+[1;32m      5[0m [0;32mimport[0m [0mstring[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      6[0m [0;32mimport[0m [0mnltk[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 7[0;31m [0;32mfrom[0m [0mSastrawi[0m[0;34m.[0m[0mStemmer[0m[0;34m.[0m[0mStemmerFactory[0m [0;32mimport[0m [0mStemmerFactory[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      8[0m [0;32mfrom[0m [0mnltk[0m[0;34m.[0m[0mcorpus[0m [0;32mimport[0m [0mstopwords[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      9[0m [0;32mfrom[0m [0mnltk[0m[0;34m.[0m[0mtokenize[0m [0;32mimport[0m [0mword_tokenize[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mModuleNotFoundError[0m: No module named 'Sastrawi'
+
+[0;31m---------------------------------------------------------------------------[0;32m
+NOTE: If your import is failing due to a missing package, you can
+manually install dependencies using either !pip or !apt.
+
+To view examples of installing some common dependencies, click the
+"Open Examples" button below.
+[0;31m---------------------------------------------------------------------------[0m
+
+
